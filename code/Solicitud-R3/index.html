@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Esta página te mostrará un trailer de una pelicula" />
+    <title>Modal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 768px)" />
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <div class="card__img" id="imagen">
+          <img src="assets/play-button.svg" alt="" />
+        </div>
+        <div class="container">
+          <h2 class="card__title">Mira el tráiler de Avengers Endgame</h2>
+          <p class="card__description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quam animi dolores fugit
+            optio aspernatur modi ab neque quibusdam a, placeat ducimus quod voluptates est? Nobis
+            excepturi pariatur quibusdam quidem.
+          </p>
+        </div>
+      </article>
+      <div class="trailer hidden">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/znk2OICHbjY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <img class="close" src="assets/close.svg" alt="close button" />
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
